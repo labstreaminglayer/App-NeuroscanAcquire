@@ -82,7 +82,7 @@ public:
     }
     QByteArray& getData() { return buffer; }
     void print() {
-        qDebug() << hex << mId << mCode << mValue << mDataSize;
+        qDebug() << Qt::hex << mId << mCode << mValue << mDataSize;
         return;
     }
     bool isValid() { return mId && mCode && mValue; }
